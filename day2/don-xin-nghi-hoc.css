@@ -1,0 +1,52 @@
+/* inline css > internal css > external css
+
+inline css > selector ID > selector class > selector element */
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #d4d4d4;        
+}
+
+#container {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+#quoc-hieu {
+    text-align :center;
+    font-weight: 600;
+}
+
+.title {
+    text-align: center;
+    color: blue;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.info{
+    margin: auto;
+    padding: 20px 10px;
+    text-align:left;
+    line-height: 1.5;
+
+}
+
+.body{
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.signature {
+    margin-right: 20px;
+    text-align:right;
+    line-height: 1.5;
+}

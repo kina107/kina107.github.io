@@ -1,0 +1,14 @@
+/* comment in CSS */
+* {
+    margin: 0;
+}
+.truyen-Kieu{
+    font-size: 24px;
+    color: black;
+    font-family:'Times New Roman', Times, serif
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: blueviolet;
+    padding: 10px;
+}

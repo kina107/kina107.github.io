@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!--internal CSS-->
+    <style>
+        p{ /*p la selector element*/
+            font-weight: 700; /* font weight hien thi do dam nhat cua chu. font-weight la key value*/
+            color: brown;
+            font-size: 18px; /* font-size thay doi kich co chu */
+        }
+
+        #future {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+
+        .uppercase {
+            text-transform: uppercase; 
+        }
+    </style>
+
+    <!--external CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--inline CSS-->
+    <h1><span style="color: red; background-color: blanchedalmond;">Kien nhan</span> la yeu to quan trong cua thanh cong</h1>
+    
+    <p id="future" class="underline uppercase">Tuong lai khoc hay cuoi tuy thuoc vao do luoi cua qua khu</p>
+    <p id="failure" class="underline">That bai la me thanh cong</p>
+    <p class="truyen-Kieu">
+        Dau long hai a to nga 
+        <br>
+        Thuy Kieu la chi, em la Thuy Van
+    </p>
+</body>
+</html>
