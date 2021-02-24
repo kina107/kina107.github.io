@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .color-icon {
+            color: red;
+        }
+
+        .font {
+            font-size: 100px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .size {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+           
+        }
+
+        .general {
+            float: left;
+        }
+
+        #flex{
+            clear:both;
+        }
+
+        .parents {
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+
+        .container{
+            margin: 20px 0 0 0;
+            background-color: darkcyan;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .box2 {
+            height: 400px;
+            width: 50%;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 400px;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        .upbox {
+            background-color: green;
+            height:200px;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        .downbox {
+            background-color: blue;
+            height: 200px;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Font icons -->
+    <h2>Font icons</h2>
+    <p>Bieu tuong trai tim <i class="fas fa-heart color-icon fa-9x"></i></p>
+
+    <!-- Font family -->
+    <h2>Font family</h2>
+    <p class="font"> Google text font</p>
+
+    <!-- Float -->
+    <h2>Float</h2>
+    <div class="size red general">Div1</div>
+    <div class="size green general">Div2</div>
+    <div class="size blue general">Div3</div>
+
+    <!-- Flex-->
+    <h2 id="flex">Flex</h2>
+
+    <div class="parents">
+        <div class=" size red">Item 1</div>
+        <div class=" size green">Item 2</div>
+        <div class=" size blue">Item 3</div>
+    </div>
+
+    <!-- Flex Practice -->
+
+    <div class="container">
+        <div class="box1">Height 400px</div>
+        <div class="box2">
+            <div class="upbox">Height 200px</div>
+            <div class="downbox">Height 200px</div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
