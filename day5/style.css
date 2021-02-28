@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#message {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    
+
+}
+
+.messenger {
+    color: #0084ff;
+
+}
+
+.navigation {
+    width: 100%;
+    height: 60px;
+    background-color: #34465C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    /* background-color: yellow */
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.menu {
+    /* background-color: tomato; */
+    width: 100%;
+}
+
+.avatar {
+    /* background-color: violet; */
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.menu-list li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.caret {
+    margin-left: 4px;
+}
+
+/* CSS cho menu con */
+
+.menu-list {
+    position: relative;
+
+}
+
+.sub-menu {
+    position: absolute;
+    padding-top: 20px;
+    display: none;
+}
+
+.sub-menu li {
+    color: #fff;
+    background-color: lightgray;
+    padding: 5px 10px 5px 10px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menu-list li:hover .sub-menu {
+    display: block;
+}
+
+/* main CSS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 5% 10% 5% 10%;
+
+}
+
+.banner {
+    width: 100%;
+    height: 480px;
+
+
+}
+
+.banner img {
+    width: 100%;
+    height: 480px;
+    padding-right: 10px;
+}
+
+.side-posts {
+    width: 100%;
+    height: 25%;
+
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+
+
+}
+
+.post-pic {
+    width: 100px;
+    height: 100%;
+
+
+}
+
+.post-info {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-decoration: none;
+    color: #5E605E;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.post-author {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+
+.post-pic>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+
+/* course intro CSS */
+
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    font-weight: 500;
+
+
+}
+
+.course-info {
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.course-title {
+    text-transform: uppercase;
+    color: #5E605E;
+    margin: 15px;
+
+}
+
+.course-description {
+    margin: 15px 25px 15px 25px;
+    color: #999999;
+}
+
+.course-logo {
+    color: #5E605E;
+}
+
+/* course details CSS */
+.course-detail {
+    grid-template-rows: 10% 90%;
+    background-color: #E4F2FD;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 16px;
+    color: #464646;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    justify-content: center;
+}
+
+.course-detail-1>img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-detail-1 {
+    margin: 5%;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.detail {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* San pham hoc vien */
+
+.samples {
+    background-color: white;
+    margin: 5%;
+    text-align: center;
+
+}
+
+.samples > h2 {
+    color: #464646;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight:400;
+    font-family: sans-serif;
+}
+
+.sample {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    justify-content: center;
+    padding: 5%;
+}
+
+.sample-1 > img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+
+.sample-1 {
+    margin: 5%;
+    line-height: 1.5;
+    color: #524646;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:10px;
+}
+
+.sample-detail > p {
+    color: #5E605E;
+    text-align: left; 
+}
+
+/* video sample */
+
+.video {
+    background-color:#E4F2FD ;
+    padding: 10%;
+    text-align: center;
+    
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #464646;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color:#919294;
+    line-height: 2;
+    padding: 5% 10% 5% 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+
+}
+
+.footer-divide ul {
+    text-decoration: none;
+    color:#919294;
+    list-style-type: none;
+}
+
+.footer-divide a {
+    text-decoration: none;
+    color:#919294;    
+}
+
+.footer-divide ol{
+    list-style-type: none;   
+
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+
