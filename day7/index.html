@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Table</title>
+</head>
+<body>
+    <!-- Form -->
+    <form action="#" method="POST"> <!-- method post de bao mat -->
+        <label for="username">Full Name</label>
+        <input id="username" type="text" name="username" placeholder="text here..." required>
+        <br> <br>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <br> <br>
+        <label for="">Gender</label>
+        <input name="gender" id="male" type="radio" value="male"><label for="male">Male</label>
+        <input name="gender" id="female" type="radio" value="female"><label for="female">Female</label>
+        <input name="gender" id="other" type="radio" value="other"><label for="other">Other</label>
+        <br> <br>
+        <label for="">Preferences</label>
+        <input id="reading" type="checkbox" name="favorites" value="read-book"><label for="reading">Reading</label>
+        <input id="cooking" type="checkbox" name="favorites"value="cook"><label for="cooking">Cooking</label>
+        <input id="swimming" type="checkbox" name="favorites"value="swimming"><label for="swimming">Swimming</label>
+        <input id="music" type="checkbox"name="favorites" value="listen-music"><label for="music">Music</label>
+        <br> <br>
+        <label for="">City</label>
+        <!-- dropdown list -->
+        <select name="country" id="country">
+            <option value="ha-noi">Ha Noi</option>
+            <option value="hue">Hue</option>
+
+            <option value="da-nang">Da Nang</option>
+
+            <option value="tp-ho-chi-minh">TP Ho Chi Minh</option>
+
+
+        </select>
+        <br> <br>
+        <!-- <input type="button" value="submit"> rarely use -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+</body>
+</html>

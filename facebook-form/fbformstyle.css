@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.facebook-form{
+    border: 1px solid lightgray;
+    width:300px;
+    height:300px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:200px;
+    top:200px;
+}
+
+.wrapper {
+    text-align: center;
+    line-height:1.5;
+}
+
+#username {
+    font-size:20px;
+    border-radius: 5%;
+    padding:2%;
+
+}
+
+#password {
+    font-size:20px;
+}
+
+.signin {
+    width: 200px;
+    height:50px;
+    background-color: #166FE5;
+    color:white;
+    text-decoration:none;
+    border-radius: 8%;
+}

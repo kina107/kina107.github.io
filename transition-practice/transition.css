@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* CSS cho image gallery hover*/
+.wrapper {
+    background-image: url('https://images.pexels.com/photos/2228578/pexels-photo-2228578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width: 100%;
+    height: 1000px;
+    padding: 5em 0 5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-pic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+
+
+}
+
+.test1 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+
+}
+
+.container {
+    border: solid 1px #dddddd;
+    opacity: 0.4;
+    z-index: 0;
+
+}
+
+img {
+    padding: 2px;
+}
+
+.hover-pic:hover {
+    transform: scale(1.5);
+    transition: all 1s ease-out;
+
+}
+
+.container:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* CSS cho tim dap */
+
+.wrapper1 {
+    background-color: #dddddd;
+    width: 100%;
+    height: 500px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:7em 0 7em 0;
+
+}
+
+.heart {
+    display: block;
+  
+    animation: beats 1.5s infinite alternate;
+}
+
+@keyframes beats {
+    0% {
+        transform: translate(10px, 10px) scale(1);
+    }
+
+    25% {
+        transform: translate(10px, 10px) scale(1);
+    }
+
+    30% {
+        transform: translate(10px, 10px) scale(1.3);
+    }
+
+    50% {
+        transform: translate(10px, 10px) scale(1.2);
+    }
+
+    70% {
+        transform: translate(10px, 10px) scale(1.3);
+    }
+
+    90% {
+        transform: translate(10px, 10px) scale(1);
+    }
+
+    100% {
+        transform: translate(10px, 10px) scale(1);
+    }
+}
+
+/* CSS cho text animation */
+
+.wrapper2{
+    background-color: #dddddd;
+    width: 100%;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+   
+}
+
+.text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.ani:before {
+content: "learning";
+color:white;
+text-transform: uppercase;
+background-color: green;
+font-size: 30px;
+font-weight: bold;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: run 3s infinite 3s;
+}
+
+@keyframes run {
+    0% {
+      content: "learning";
+      background-color:saddlebrown;
+      
+    }
+    50% {
+      content: "coding";
+      background-color:purple;
+      
+      
+    }
+    100% {
+        content: "teaching";       
+        background-color: green;
+        
+    }
+
+    
+  }
+
