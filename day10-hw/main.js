@@ -57,3 +57,67 @@ function daysCount(x, y) {
         }
     }
 }
+
+/**Tính tổng các chữ số trong 1 số nguyên dương. */
+
+function calSum(number) {
+    if (number < 0 || Number.isInteger(number) === false) {
+        return;
+    }
+    let sum = 0;
+    let res;
+    while (number !== 0) {
+        res = number % 10;
+        sum += res;
+        number = Math.floor(number / 10);
+    }
+    return sum;
+}
+
+/**
+ *  In ra một chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì thực hiện cắt chuỗi lấy 10 ký tự và hiển thị phía sau là dấu ba chấm (10 kí tự + ...)
+ */
+
+function modifyStr(str) {
+    let x = str.length;
+    if (x < 0) {
+        return `Du lieu khong hop le`;
+    }
+
+    if (x < 10) {
+        return str;
+    } else {
+        newStr = str.substring(0, 9);
+        return `${newStr}...`;
+    }
+}
+
+/**
+ * Viết hàm có tính năng translate. Truyền vào hàm tên đất nước bạn muốn biết về lời chào ở nuớc họ: French, Hawaiian, Germany, Italy, Croatia. Nếu không nhập gì chúng tôi có thể cho rằng bạn muốn nói biết ở Việt Nam. Hàm sẽ in ra lời chào theo đất nước tương ứng.
+
+Ví dụ nước Việt Nam có lời chào: "Xin chào"
+ */
+
+function translate(greetings) {
+    let text;
+    switch (greetings) {
+        case "French":
+            text = "Bonjour";
+            break;
+        case "Hawaiian":
+            text = "Aloha";
+            break;
+        case "Germany":
+            text = "Hallo";
+            break;
+        case "Italy":
+            text = "Ciao";
+            break;
+        case "Croatia":
+            text = "Bok";
+            break;
+        default:
+            text = "Xin Chao";
+    }
+    console.log(text);
+}
