@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+
+    }
+
+    div {
+        background-color: burlywood;
+        width: 30%;
+        height: 30%;
+        padding: 2%;
+        text-align: center;
+        margin-top : 200px;
+
+    }
+</style>
+
+<body>
+    <div id="guessGame">
+        
+        <h1>Guess!</h1>
+        <p>Bạn có 10 lượt đoán</p>
+        <p>Khoảng giá trị có thể đoán từ 0 đến 100.</p>
+        <input type="number" id="number">
+        <button type="submit" id="guess" onClick=onClick1()>Guess!</button>
+        <button type="reset" onclick=resetPage()>Reset</button>
+        <p id = "alert"></p>
+        <p id="result"></p>
+    
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>
