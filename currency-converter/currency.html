@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-converter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to left,
+                    #F0B7B9, #1B94FC);
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .wrapper {
+            padding: 10px;
+            background-image: linear-gradient(to right,
+                    #DC4A52, #413EAE);
+            width: 20%;
+        }
+
+        #container {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        label {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        input {
+            padding: 5px 15px 5px 3px;
+            width: 20em;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="wrapper">
+        <div id="container">
+            <div class="input-field">
+                <label for="amount">Amount</label>
+                <input type="number" id="number" name="amount" min="1">
+                <p id="alert"></p>
+            </div>
+            <div class="input-field">
+                <label for="from">From</label>
+                <input id="from" type="text" name="currency-select" list="currencyList1"
+                    placeholder="Type to search...">
+                <datalist id="currencyList1">
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="VND">Vietnam Dong</option>
+                </datalist>
+            </div>
+            <div class="input-field">
+                <label for="to">To</label>
+                <input id="to" type="text" name="currency-select" list="currencyList2" placeholder="Type to search...">
+                <datalist id="currencyList2">
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="VND">Vietnam Dong</option>
+                </datalist>
+            </div>
+        </div>
+        <p id="output"></p>
+        <button class="btn" onClick="convert()">Convert</button>
+    </div>
+
+    <script src="./currency.js"></script>
+</body>
+
+</html>

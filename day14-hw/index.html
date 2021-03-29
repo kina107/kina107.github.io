@@ -6,10 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #74B6C3;
+    }
+
+    #header {
+        margin-top: 100px;
+        color: white;
+    }
+
+    #content {
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        border: solid 2px white;
+        margin-top: 50px;
+        color: white;
+    }
+
+    .button {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    button {
+        margin: 2px;
+    }
+</style>
 
 <body>
-    <div class="content">
+    <div id="header">
+        <h1>Một cuốn sách về chủ nghĩa tối giản</h1>
+    </div>
+    <div id="content">
         <p id="para1">Nếu bỏ đi khoảng thời gian hàng ngày tôi vùi đầu vào các trang mua sắm, loạn lên để tìm một món đồ
             mặc
             mỗi sáng, lo lắng vì những việc không thể kiểm soát được trong tương lai, trì hoãn làm những gì mình đáng ra
@@ -29,6 +68,16 @@
             nhiệm” kiểm soát, uốn nắn, và thay đổi hành vi, tính cách của vợ/chồng/con cái.
         </p>
     </div>
+    <div class="button">
+        <button onClick=changeFontSize()>ChangeFontSize</button>
+        <button onClick=changeColor()>ChangeColor</button>
+        <button onClick=copyContent()>CopyContent</button>
+        <button onClick=changeBGColor()>changeBGColor</button>
+        <button onClick=increaseFontSize()>increaseFontSize</button>
+        <button onClick=reset()>Reset</button>
+    </div>
+
+
     <script src="./index.js"></script>
 </body>
 

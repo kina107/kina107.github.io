@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .wrapper {
+        width: 30%;
+        margin-top: 10rem;
+        border: 2px solid lightgray;
+        
+    }
+
+    #container {
+        line-height: 2;
+        height:80%;
+        position:relative;
+        bottom:40px;
+        text-align: center;
+    }
+
+    #header {
+        background-color: #FFE689;
+        height:20%;
+        position:relative;
+        bottom:48px;
+    }
+
+    span {
+        font-weight: bolder;
+        position: relative;
+        right: 5px;
+    }
+
+    #header p {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    img{
+        position:relative;
+        top:5px;
+        padding-right: 5px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <p><span>BMI</span>Calculator</p>
+        </div>
+        <div id="container">
+            <img src="bmi-icons/weight-scale.png" alt="scale-pic">
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" placeholder="Eg: 60"><br>
+            <img src="bmi-icons/measuring-tape (1).png" alt="scale-pic">
+            <label for="height">Height</label>
+            <input type="number" id="height" placeholder="Eg: 180">
+            <p id="alert"></p>
+            <button onClick=bmiCalc()>Calculate BMI</button>
+        </div>
+    </div>
+    <script src="./bmi.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 /**
  *  Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không (đọc xuôi hay ngược đều như nhau, không tính khoảng trắng và không phân biệt hoa thường), kết quả trả về true hoặc false. Ví dụ ''Race car'' trả về true, ''hello world'' trả về false.
  */
-
+// Palindrome string
  function kiemTraChuoiDoiXung(str){
     let reverseStr=""; 
     for(let i=str.length-1;i>=0;i--){
@@ -44,7 +44,6 @@ function avgAge(arrays) {
         console.log(i.age);
         sum = sum + i.age;
     }
-    console.log("sum  ", sum);
     avg = sum / arrays.length;
     return avg;
 }
@@ -70,9 +69,6 @@ let students = [
     },
 ]
 
-//  for ( let i of students){
-//      console.log(i.age);
-//  }
 function sapXepTuoi(obj) {
     let min = obj[0];
     for (i = 0; i < obj.length; i++) {
@@ -113,7 +109,7 @@ function locChuoi(arrays){
  * Viết hàm loại bỏ các giá trị sai trong 1 mảng. Các giá trị sai bao gồm: false, null, undefined, NaN, 0, ''''
  */
 
- let values = [false,NaN,24,0,"",undefined,null,"ANBC",true]
+ let values = [false,NaN,24,0,"",undefined,null,true]
  function giaTri(arr){
      let newArr =[];
      for(let i = 0;i<arr.length;i++){

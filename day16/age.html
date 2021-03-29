@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh so tuoi</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <style>
+        body {
+            background-color: #393E46;
+            text-align: center;
+        }
+
+        input {
+            width: 20rem;
+            height: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 30px;
+            font-family: 'Lobster', cursive;
+            text-shadow: 5px 0 #232931;
+            font-size: 8rem;
+            color: #4ECCA3;
+        }
+
+        p {
+            font-size: 2rem;
+            color: #4ECCA3;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        button {
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>How old are you?</h1>
+    </div>
+    <div id="container">
+        <input type="number" id="age" placeholder="Please input your year of birth in 4 digits">
+        <p id="alert"></p>
+        <button onClick=ageCount()>Calculate!</button>
+    </div>
+    <script src="./age.js"></script>
+</body>
+
+</html>

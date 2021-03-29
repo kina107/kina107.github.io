@@ -1,18 +1,17 @@
-let p = document.getElementsByTagName("p");
-let para1 = document.getElementById("para1");
-let para2 = document.getElementById("para2");
-let para3= document.getElementById("para3");
-let content = document.getElementById("content");
-
-function changeFontSize(){
-    let newSize = prompt("Please enter a font size", "20px");
-    content.style.fontSize = newSize;
+let container = document.getElementById("container");
+function changeFontSize() {
+    let newFontSize = prompt("Nhap vao kich thuoc chu", "20px");
+    container.style.fontSize = newFontSize;
 }
 
+let para1 = document.getElementById("para1");
+let para2 = document.getElementById("para2");
+let para3 = document.getElementById("para3");
+
 function changeColor() {
-    p[0].style.color = "green";
-    p[1].style.color = "yellow";
-    p[2].style.color = "red";
+    para1.style.color = "green";
+    para2.style.color = "yellow";
+    para3.style.color = "red";
 }
 
 function copyContent() {
@@ -20,11 +19,11 @@ function copyContent() {
 }
 
 function changeBGColor() {
-    content.style.backgroundColor = "#f2b4b4";
+    container.style.backgroundColor = "burlywood";
 }
 
 function increaseFontSize() {
-    let value = prompt("Nhập vào đoạn văn bạn muốn thay đổi", "para1");
+    let value = prompt("Nhap vao doan van ma ban muon thay doi", "para1,para2,para3");
     let font = document.getElementById(value);
     let fontSizeNumber = getComputedStyle(font).getPropertyValue("font-size");
     let currentFont= parseFloat(fontSizeNumber);
@@ -33,8 +32,6 @@ function increaseFontSize() {
     }
 }
 
-function reset(){
+function reset() {
     document.location.reload();
 }
-
-

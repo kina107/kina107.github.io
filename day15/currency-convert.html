@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <span class="label">Amount</span>
+        <input id="number" type="number" name="amount" min="0">
+    </div>
+
+    <div id="container1">
+        <span class="label">From</span>        
+        <select name="currency" id="currency-select">
+            <option value="">Please choose a currency</option>
+            <option value="USD">USD</option>
+            <option value="Euro">Euro</option>
+            <option value="Vietnam Dong">Vietnam Dong</option>
+        </select>
+    </div>
+
+    <div id="container2">
+        <span class="label">To</span>        
+        <select name="currency" id="currency-select-1">
+            <option value="">Please choose a currency</option>
+            <option value="USD">USD</option>
+            <option value="Euro">Euro</option>
+            <option value="Vietnam Dong">Vietnam Dong</option>
+        </select>
+    </div>
+
+    <span class="label"></span>
+    <button class="">Convert!</button>
+
+    <script src="currency-converter.js"></script>
+
+</body>
+
+</html>
