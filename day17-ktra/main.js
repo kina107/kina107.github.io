@@ -1,3 +1,4 @@
+//Bai 1
 function sumAll(x, y) {
     let numbers = [];
     for (var i = x + 1; i < y; i++) {
@@ -9,13 +10,13 @@ function sumAll(x, y) {
         sum += numbers[i];
     }
     return sum;
-
 }
 
+//Bai 2
 function spinalCase(str) {
     let newStr = '';
     let arr = str.split('');
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < arr.length; i++) {
         if (i > 0) {
             if (arr[i] >= 'A' && arr[i] <= 'Z') {
                 if (arr[i - 1] >= 'a' && arr[i - 1] <= 'z') {
@@ -34,6 +35,7 @@ function spinalCase(str) {
     return newStr;
 }
 
+//Bai 5
 function sortNumbers(n) {
     let arrayOfN = Array.from(String(n), Number);
     let newArr = arrayOfN.sort(function (a, b) { return a - b });
@@ -45,8 +47,18 @@ function sortNumbers(n) {
     console.log(n);
 }
 
-
+//Bai 6
 let body = document.querySelector("body");
+let color = document.getElementById("hexCode");
 
+function changeBGColor(){
+    let randomColor = "";
+    let letters = "0123456789abcdef"
+    for(i = 0; i < 6; i++) {
+        randomColor = randomColor + letters[Math.floor(Math.random() * 16)];
+      }
+      color.innerHTML = "#" + randomColor;
+      body.style.backgroundColor = "#" + randomColor;
+}
 
 
