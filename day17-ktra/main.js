@@ -55,7 +55,10 @@ function sortNumbers(n) {
     let arrayOfN = Array.from(String(n), Number);
     let newArr = arrayOfN.sort(function (a, b) { return a - b });
     if (newArr[0] === 0) {
-        return `Du lieu khong hop le`;
+        let temp = newArr[0];
+        newArr[0] = newArr[1];
+        newArr[1] = temp;
+        n = Number(newArr.join(''));
     } else {
         n = Number(newArr.join(''));
     }
