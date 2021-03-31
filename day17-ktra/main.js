@@ -4,12 +4,12 @@ function sumAll(x, y) {
         return `Please insert two integers`;
     } else {
         let numbers = [];
-        for (var i = x + 1; i < y; i++) {
+        for (let i = x + 1; i < y; i++) {
             numbers.push(i);
         }
         console.log(numbers);
         let sum = 0;
-        for (var i in numbers) {
+        for (let i in numbers) {
             sum += numbers[i];
         }
         return sum;
