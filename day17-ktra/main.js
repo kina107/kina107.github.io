@@ -1,15 +1,19 @@
 //Bai 1
 function sumAll(x, y) {
-    let numbers = [];
-    for (var i = x + 1; i < y; i++) {
-        numbers.push(i);
+    if (Number.isInteger(x) === false || Number.isInteger(y) === false) {
+        return `Please insert two integers`;
+    } else {
+        let numbers = [];
+        for (var i = x + 1; i < y; i++) {
+            numbers.push(i);
+        }
+        console.log(numbers);
+        let sum = 0;
+        for (var i in numbers) {
+            sum += numbers[i];
+        }
+        return sum;
     }
-    console.log (numbers);
-    let sum = 0;
-    for (var i in numbers) {
-        sum += numbers[i];
-    }
-    return sum;
 }
 
 //Bai 2
@@ -35,6 +39,17 @@ function spinalCase(str) {
     return newStr;
 }
 
+//Bai 4
+function snail(h, x, y) {
+    if (h < 0 || x < 0 || y < 0) {
+        return `Invalid inputs`;
+    } else {
+        let days;
+        days = h/(x-y);
+        console.log(`Sau ${days} ngày thì ốc sẽ leo được ${h} m`); 
+    }
+}
+
 //Bai 5
 function sortNumbers(n) {
     let arrayOfN = Array.from(String(n), Number);
@@ -51,14 +66,14 @@ function sortNumbers(n) {
 let body = document.querySelector("body");
 let color = document.getElementById("hexCode");
 
-function changeBGColor(){
+function changeBGColor() {
     let randomColor = "";
     let letters = "0123456789abcdef"
-    for(i = 0; i < 6; i++) {
+    for (i = 0; i < 6; i++) {
         randomColor = randomColor + letters[Math.floor(Math.random() * 16)];
-      }
-      color.innerHTML = "#" + randomColor;
-      body.style.backgroundColor = "#" + randomColor;
+    }
+    color.innerHTML = "#" + randomColor;
+    body.style.backgroundColor = "#" + randomColor;
 }
 
 
