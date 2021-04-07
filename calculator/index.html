@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- title -->
+        <div class="header">
+            <h1>Calculator</h1>
+        </div>
+
+        <!-- calculator screen -->
+        <div id="output">
+
+        </div>
+
+        <!-- calculator keys -->
+        <div class="keys">
+            <button onclick="pressedBtn(this)" id="clear">AC</button>
+            <button onclick="plusMinusBtn()" class="operators">&#177</button>
+            <button onclick="squareRoot()" class="operators">&#8730</button>
+            <button onclick="toThePower()" class="operators">&sup2</button>
+            <button onclick="factorial()" class="operators">!</button>
+            <button onclick="pressedBtn(this)" class="operators">%</button>
+            <button onclick="pressedBtn(this)" class="operators regulars">/</button>
+            <button onclick="pressedBtn(this)" class="numbers">7</button>
+            <button onclick="pressedBtn(this)" class="numbers">8</button>
+            <button onclick="pressedBtn(this)" class="numbers">9</button>
+            <button onclick="pressedBtn(this)" class="operators regulars">*</button>
+            <button onclick="pressedBtn(this)" class="numbers">4</button>
+            <button onclick="pressedBtn(this)" class="numbers">5</button>
+            <button onclick="pressedBtn(this)" class="numbers">6</button>
+            <button onclick="pressedBtn(this)" class="operators regulars">-</button>
+            <button onclick="pressedBtn(this)" class="numbers">1</button>
+            <button onclick="pressedBtn(this)" class="numbers">2</button>
+            <button onclick="pressedBtn(this)" class="numbers">3</button>
+            <button onclick="pressedBtn(this)" class="operators regulars">+</button>
+            <button onclick="pressedBtn(this)" class="numbers">0</button>
+            <button onclick="pressedBtn(this)" class="dot">.</button>
+            <button onclick="pressedBtn(this)" class="equal-sign regulars">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
