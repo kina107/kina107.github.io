@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Quiz</title>
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bg music -->
+        <audio controls autoplay class="hide">
+            <source src="audio/AvengersThemeSong.mp3" type="audio/mpeg">
+        </audio>
+        <!-- Màn hình khi start quiz -->
+        <div id="start-page">
+            <div class="header">
+                <h1>Avengers Quiz</h1>
+                <button id="start-btn">Start!</button>
+            </div>
+            <footer>Made by N.</footer>
+        </div>
+        <!-- Màn hình nội dung câu hỏi và các lựa chọn -->
+        <div id="quiz-content" class="gradient-border hidden">
+            <div id="question">
+                <p>Question x of y</p>
+                <img class="char-pic" src="#" alt="character-pic">
+                <h3>In the 2012 movie, The Avengers features Captain America. What is his real name?</h3>
+            </div>
+            <div id="options">
+                <button onclick=checkAnswer(this) class="option btn" id="opt-1">Buck Rogers</button>
+                <button onclick=checkAnswer(this) class="option btn" id="opt-2">Ted Rogers</button>
+                <button onclick=checkAnswer(this) class="option btn" id="opt-3">Steve Rogers</button>
+                <button onclick=checkAnswer(this) class="option btn" id="opt-4">Tony Stark</button>
+            </div>
+
+            <div id="progress">
+                <img id="" class="pro-item" src="" alt="">
+            </div>
+        </div>
+        <!-- Màn hình hiển thị kết quả -->
+        <div id="score-board" class="hidden gradient-border">
+            <img class="end-pic" src="img/rocket.jpg" alt="pic">
+            <p id="score-point">Điểm số</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
