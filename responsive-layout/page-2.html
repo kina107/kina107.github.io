@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout 2</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        grid-area: hd;
+        background-color: #ddffbc;
+        width: 100%;
+        height: 50px;
+        border: 1px dotted lightgray;
+    }
+
+    .left {
+        grid-area: le;
+        background-color: #ddffbc;
+        height: 430px;
+        border: 1px dotted lightgray;
+    }
+
+    .right {
+        grid-area: ri;
+        background-color: #ddffbc;
+        height: 430px;
+        border: 1px dotted lightgray;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd hd"
+            "le le mi mi mi mi mi mi ri ri";
+    }
+
+    .middle {
+        grid-area: mi;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+
+    .square1 {
+        width: 100%;
+        height: 200px;
+        background-color: #91c788;
+    }
+
+    @media (max-width: 600px) {
+        .middle {
+            grid-template-columns: auto;
+        }
+
+        .container {
+            grid-template-columns: 15px auto auto auto auto auto auto auto auto 15px;
+        }
+
+        .left {
+            height: 1400px;
+        }
+
+        .right {
+            height: 1400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header class="header">1</header>
+        <section class="left">2</section>
+        <section class="middle">
+            <div class="square1">a</div>
+            <div class="square1">b</div>
+            <div class="square1">c</div>
+            <div class="square1">d</div>
+            <div class="square1">e</div>
+            <div class="square1">f</div>
+        </section>
+        <section class="right">4</section>
+    </div>
+</body>
+
+</html>
