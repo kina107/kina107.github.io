@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #204051;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 30px;
+        background-color: #cae8d5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #84a9ac;
+        padding: 0 20px 0 20px;
+    }
+
+    .menu-item {
+        margin: 5px;
+    }
+
+    .user-form {
+        display: flex;
+        flex-direction: row;
+        background-color: #cae8d5;
+        padding: 0 20px 0 20px;
+    }
+
+    .form {
+        margin: 5px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1000px 1fr;
+        grid-gap: 15px;
+        padding: 15px;
+    }
+
+    .square {
+        width: 100%;
+        height: 400px;
+        background-color: #84a9ac;
+    }
+
+    .icon {
+        position: absolute;
+        left: 15px;
+        display: none;
+        background-color: #84A9AC;
+        padding: 3px;
+    }
+
+    .show {
+        visibility: visible !important;
+    }
+
+
+    @media (max-width: 600px) {
+        .icon {
+            display: block;
+        }
+
+        .logo {
+            margin: auto;
+            width: 80px;
+            height: 20px;
+        }
+
+        .menu {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 60px;
+            width: 100%;
+            background-color: #dddddd;
+            visibility: hidden;
+            padding: 0 15px 0 15px;
+        }
+
+        .menu-item {
+            background-color: #84A9AC;
+            text-align: center;
+            width: 100%;
+            padding: 2px;
+            color: white;
+        }
+
+        .user-form {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 155px;
+            width: 100%;
+            background-color: #dddddd;
+            visibility: hidden;
+            padding: 0 15px 0 15px;
+        }
+
+        .form {
+            background-color: #84A9AC;
+            text-align: center;
+            width: 100%;
+            padding: 2px;
+            color: white;
+        }
+
+        .main {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <div class="icon">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="menu">
+            <div class="menu-item">Menu 1</div>
+            <div class="menu-item">Menu 2</div>
+            <div class="menu-item">Menu 3</div>
+        </div>
+        <div class="user-form">
+            <div class="form">Login</div>
+            <div class="form">Register</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./page-7.js"></script>
+</body>
+
+</html>
