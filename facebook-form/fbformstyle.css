@@ -1,43 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.facebook-form{
-    border: 1px solid lightgray;
-    width:300px;
-    height:300px;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right:200px;
-    top:200px;
+body {
+    background-color: #f0f2f5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
 }
 
-.wrapper {
-    text-align: center;
-    line-height:1.5;
+.container {
+    background-color: white;
+    width: 30%;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 30px;
 }
 
-#username {
-    font-size:20px;
-    border-radius: 5%;
-    padding:2%;
-
+form {
+    width: 100%;
 }
 
-#password {
-    font-size:20px;
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    color: #1d2129;
+    font-size: 17px;
 }
 
-.signin {
-    width: 200px;
-    height:50px;
-    background-color: #166FE5;
-    color:white;
-    text-decoration:none;
-    border-radius: 8%;
+
+input::placeholder {
+    color: #90949C;
 }
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2
+}
+
+button {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+} 
