@@ -211,7 +211,7 @@ ol {
 @media (max-width: 800px) {
     .navbar {
         position: relative;
-    }
+    }  
 
     .logo {
         position: absolute;
