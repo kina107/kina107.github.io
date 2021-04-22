@@ -5,8 +5,7 @@
 }
 
 .page-custom {
-    max-width: 1440px;
-    /* max-height: 790px; */
+    max-width: 1440px;    
     background-image: url(./img/Background.png);
     background-size: 1440px 612px;
     background-repeat: no-repeat;
@@ -56,8 +55,7 @@
 /* Main Content CSS */
 
 .main {
-    max-width: 679px;
-    /* max-height: 579px; */
+    max-width: 679px;    
     margin: auto;
     margin-top: 6rem;
     text-align: center;
@@ -80,8 +78,7 @@
 }
 
 .search {
-    max-width: 591px;
-    /* max-height: 56px; */
+    max-width: 591px;    
     border: none;
 }
 
@@ -89,14 +86,14 @@
     width: 307px;
     height: 55px;
     border: 1px solid #757575;
-    padding-left: 15px;
+    padding-left: 15px;  
 }
 
 .rect2 {
     width: 142px;
     height: 55px;
     border: 1px solid #757575;
-    padding-left: 15px;
+    padding-left: 15px;    
 }
 
 .search-btn {
@@ -105,26 +102,13 @@
     background-color: #DEFF06;
     color: #757575 !important;
     border: 1px solid #757575;
-    font-size: 16px;
-}
-
-@media (max-width: 700px) {
-
-    .navbar-brand {
-        font-size: 40px;
-    }
-
-    .search {
-        display: flex;
-        flex-direction: column;
-    }
+    font-size: 16px;     
 }
 
 /* Hot Deals Section CSS */
 
 .hot-deals {
-    max-width: 1277px;
-    /* max-height: 763px; */
+    max-width: 1277px;  
     margin: auto;
     text-align: center;
 }
@@ -177,8 +161,7 @@
 }
 
 .price-tag {
-    max-width: 86px;
-    /* max-height: 44px; */
+    max-width: 86px;    
     position: absolute;
     top: 26px;
     right: -7px;
@@ -187,7 +170,6 @@
 
 .deals-btn {
     max-width: 228px;
-    /* max-height: 60px; */
     background-color: #F5A623;
     color: white;
     border: none;
@@ -225,10 +207,9 @@
 /* Footer CSS */
 
 .footer {
-    max-width: 1440px;
-    /* max-height: 790px; */
+    max-width: 1440px;    
     background-image: url(./img/Rectangle\ 5.png);
-    background-size: 1440px 348px;
+    background-size: 1440px;
     background-repeat: no-repeat;
     background-origin: padding-box;
     padding: 1rem;
@@ -239,6 +220,7 @@
 }
 
 .footer-heading {
+    padding-top: 30px;
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -260,4 +242,25 @@
     margin: auto;
     padding-left: 84px;
     padding-right: 84px;
+}
+
+@media (max-width: 700px) {
+
+    .navbar-brand {
+        font-size: 40px;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .footer-search {
+        display: flex;
+        flex-direction: row;        
+    }
+
+    .footer-heading {
+        padding-top: none;
+    }
 }
