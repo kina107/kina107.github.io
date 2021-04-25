@@ -5,7 +5,7 @@
 }
 
 .page-custom {
-    max-width: 1440px;    
+    max-width: 1440px;
     background-image: url(./img/Background.png);
     background-size: 1440px 612px;
     background-repeat: no-repeat;
@@ -49,15 +49,15 @@
     background-color: #DEFF06;
     color: #757575 !important;
     border: none;
-    font-size: 16px;
+    font-size: 16px;      
 }
 
 /* Main Content CSS */
 
 .main {
-    max-width: 679px;    
+    max-width: 679px;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -66,19 +66,36 @@
 }
 
 .main-header>h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
     font-size: 54px;
+    line-height: 81px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 1.12px;
     color: white;
 }
 
 .main-header>p {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
-    color: white;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.91;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
+    padding: 10px;
 }
 
 .search {
-    max-width: 591px;    
+    max-width: 591px;
     border: none;
 }
 
@@ -86,14 +103,14 @@
     width: 307px;
     height: 55px;
     border: 1px solid #757575;
-    padding-left: 15px;  
+    padding-left: 15px;
 }
 
 .rect2 {
     width: 142px;
     height: 55px;
     border: 1px solid #757575;
-    padding-left: 15px;    
+    padding-left: 15px;
 }
 
 .search-btn {
@@ -102,13 +119,13 @@
     background-color: #DEFF06;
     color: #757575 !important;
     border: 1px solid #757575;
-    font-size: 16px;     
+    font-size: 16px;    
 }
 
 /* Hot Deals Section CSS */
 
 .hot-deals {
-    max-width: 1277px;  
+    max-width: 1277px;
     margin: auto;
     text-align: center;
 }
@@ -129,13 +146,13 @@
 }
 
 .hot-deals-span {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .section-heading {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     line-height: 45px;
     opacity: 0.8;
@@ -161,7 +178,7 @@
 }
 
 .price-tag {
-    max-width: 86px;    
+    max-width: 86px;
     position: absolute;
     top: 26px;
     right: -7px;
@@ -207,7 +224,7 @@
 /* Footer CSS */
 
 .footer {
-    max-width: 1440px;    
+    max-width: 1440px;
     background-image: url(./img/Rectangle\ 5.png);
     background-size: 1440px;
     background-repeat: no-repeat;
@@ -216,7 +233,7 @@
     margin: auto;
     font-family: 'Poppins', sans-serif;
     color: white;
-   
+
 }
 
 .footer-heading {
@@ -252,15 +269,52 @@
 
     .search {
         display: flex;
-        flex-direction: column;
-    }    
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rect1 {
+        width: 68%;
+    }
+
+    .rect2 {
+        width: 32%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
 
     .footer-search {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
     }
 
     .footer-heading {
         padding-top: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .search {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rect1 {
+        width: 68%;
+    }
+
+    .rect2 {
+        width: 32%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .footer-search {
+        flex-wrap: wrap;
     }
 }
