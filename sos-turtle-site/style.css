@@ -8,7 +8,7 @@
 
 header {
     background: linear-gradient(175deg, rgba(0, 140, 190, 1) 0%, rgba(24, 151, 196, 0.2) 14%, rgba(255, 255, 255, 0) 67%), url(./img/turtle-bg.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -100,12 +100,11 @@ hr {
 
 .donate-container {
     background: white;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     position: relative;
     top: 40%;
-    border-radius: 4px;    
-    height: 10%;
+    border-radius: 4px;   
 }
 
 .donate-title {
@@ -135,6 +134,8 @@ hr {
     background-color: #23CF5F;
     color: #fff;
     border: none;
+    padding: 2rem 0 2rem 0;
+    border-radius: 4px;    
 }
 
 .fa-sort-up {
@@ -150,12 +151,35 @@ hr {
     flex-direction: column;
     color: white;
     position: absolute;
-    bottom: 10rem;
+    bottom: 8rem;
 
 }
 
 .socials i {
     margin: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s ease 0s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s ease 0s;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1eb252;
+    border: 1px solid #3E4C5B;
 }
 
 /* -------------- Content Section CSS ----------------*/
@@ -214,10 +238,6 @@ hr {
 }
 
 /* --------Highlight section CSS--------- */
-
-/* .highlight-heading, .highlight-content {
-    width: 45%;
-} */
 
 .number {
     font-family: Montserrat;
@@ -289,6 +309,79 @@ a:active {
     margin-bottom: 4rem;
 }
 
+.btn-news {
+    width: 20%;
+    height: 4rem;
+    background-color: #23CF5F;
+    color: #fff;
+    border: none;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.p-left {
+    padding-left: 40px;
+}
+
+
+
+/* -------------Footer Section CSS ------------ */
+
+.footer {
+    margin: 10rem auto 5rem auto;
+    max-width: 50%;
+}
+
+.footer-item {
+    margin-top: 5rem;
+}
+
+.footer-item p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #3E4C5B;
+}
+
+.footer-item span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #23CF5F;
+}
+
+.subscribe {
+    margin: 4rem auto 10rem auto;
+}
+
+.rect1 {
+    width: 70%;
+    padding-left: 15px;
+    height: 4rem;
+    background: #F9FCFF;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-btn {
+    width: 30%;
+    height: 4rem;
+    background-color: #23CF5F;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 2px;
+}
 
 /* -------------XS screen ------------ */
 
@@ -313,6 +406,45 @@ a:active {
         padding: 0;
     }
 
+    .nav-icon-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+    }
+    
+    .nav-icon {
+        margin: 5px;
+    }
+
+    .donate-container {
+        position: relative;
+        top: 25%;
+    }
+
+    .donate-title {
+        display:none;
+    }
+
+    .donate-btn {
+        padding: 10px;
+    }
+
+    .subscribe {
+        margin:0;
+        flex-direction:column;
+        width: 100vw;        
+    }
+
+    .p-left {
+        padding-left: 0;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+    
 }
 
 /* -------------Small Screen---------------- */
@@ -337,6 +469,28 @@ a:active {
     .welcome {
         padding: 0;
     }
+
+    .donate-container {
+        position: relative;
+        top: 25%;
+    }
+
+    .donate-title {
+        display:none;
+    }
+
+    .donate-btn {
+        padding: 10px;
+    }
+
+    .p-left {
+        padding-left: 0;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+    
 }
 
 /* ----------------Medium Screen----------------- */
@@ -360,5 +514,22 @@ a:active {
 
     .welcome {
         padding: 0;
+    }
+
+    .donate-container {
+        position: relative;
+        top: 25%;
+    }    
+
+    .donate-btn {
+        padding: 10px;
+    }  
+    
+    .p-left {
+        padding-left: 0;
+    }
+
+    .section-title {
+        font-size: 40px;
     }
 }
