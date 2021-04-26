@@ -8,7 +8,7 @@
 
 header {
     background: linear-gradient(175deg, rgba(0, 140, 190, 1) 0%, rgba(24, 151, 196, 0.2) 14%, rgba(255, 255, 255, 0) 67%), url(./img/turtle-bg.png);
-    background-size: 100% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -100,11 +100,11 @@ hr {
 
 .donate-container {
     background: white;
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
     position: relative;
     top: 40%;
-    border-radius: 4px;   
+    border-radius: 4px;
 }
 
 .donate-title {
@@ -133,9 +133,10 @@ hr {
     height: 90%;
     background-color: #23CF5F;
     color: #fff;
-    border: none;
+    border: 1px solid white;
     padding: 2rem 0 2rem 0;
-    border-radius: 4px;    
+    border-radius: 4px;
+    margin-left: 4rem;
 }
 
 .fa-sort-up {
@@ -330,7 +331,7 @@ a:active {
 
 .footer {
     margin: 10rem auto 5rem auto;
-    max-width: 50%;
+    width: 50%;
 }
 
 .footer-item {
@@ -360,7 +361,7 @@ a:active {
 }
 
 .rect1 {
-    width: 70%;
+    max-width: 70%;
     padding-left: 15px;
     height: 4rem;
     background: #F9FCFF;
@@ -386,6 +387,12 @@ a:active {
 /* -------------XS screen ------------ */
 
 @media (max-width: 576px) {
+    header {
+        background: linear-gradient(175deg, rgba(0, 140, 190, 0.2) 0%, rgba(24, 151, 196, 0.4) 55%, rgba(255, 255, 255, 1) 90%),url(./img/turtle-bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
     .main {
         top: 2%;
     }
@@ -413,7 +420,7 @@ a:active {
         top: 5rem;
         right: 1rem;
     }
-    
+
     .nav-icon {
         margin: 5px;
     }
@@ -423,18 +430,27 @@ a:active {
         top: 25%;
     }
 
-    .donate-title {
-        display:none;
-    }
+    /* .donate-title {
+        display: none;
+    } */
 
     .donate-btn {
         padding: 10px;
     }
 
+    .socials {
+        bottom: 17rem;
+        padding: 5px;
+    }
+
+    .socials i {
+        margin: 5px;
+    }
+
     .subscribe {
-        margin:0;
-        flex-direction:column;
-        width: 100vw;        
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
     }
 
     .p-left {
@@ -442,9 +458,43 @@ a:active {
     }
 
     .section-title {
-        font-size: 40px;
+        font-size: 30px;
     }
-    
+
+    .btn-news {
+        width: 50%;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer-btn {
+        width: 50%;
+    }
+
+    .footer-item {
+        margin-top: 2rem;
+    }
+
+    .rect-container {
+        top: 25rem;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .btn-news {
+        margin-top: 2rem;
+    }
+
+    .bottom {
+        margin-bottom: 2rem;
+    }
+
+
 }
 
 /* -------------Small Screen---------------- */
@@ -475,9 +525,9 @@ a:active {
         top: 25%;
     }
 
-    .donate-title {
-        display:none;
-    }
+    /* .donate-title {
+        display: none;
+    } */
 
     .donate-btn {
         padding: 10px;
@@ -490,7 +540,36 @@ a:active {
     .section-title {
         font-size: 40px;
     }
-    
+
+    .btn-news {
+        width: 50%;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer-btn {
+        width: 50%;
+    }
+
+    .footer-item {
+        margin-top: 2rem;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .btn-news {
+        margin-top: 2rem;
+    }
+
+    .bottom {
+        margin-bottom: 2rem;
+    }
+
 }
 
 /* ----------------Medium Screen----------------- */
@@ -519,17 +598,42 @@ a:active {
     .donate-container {
         position: relative;
         top: 25%;
-    }    
+    }
 
     .donate-btn {
         padding: 10px;
-    }  
-    
+    }
+
     .p-left {
         padding-left: 0;
     }
 
     .section-title {
         font-size: 40px;
+    }
+
+    .footer-item {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer-btn {
+        width: 50%;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .btn-news {
+        margin-top: 2rem;
+    }
+
+    .bottom {
+        margin-bottom: 2rem;
     }
 }
