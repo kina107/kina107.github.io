@@ -1,0 +1,647 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1eb252;
+    border: 1px solid #3E4C5B;
+}
+
+/* Navbar CSS */
+
+.logo {
+    width: 13rem;
+}
+
+.nav-item {
+    margin: .8rem;
+}
+
+.nav-items {
+    width: 60%;
+    margin: auto;
+}
+
+/* Hero Text Section CSS */
+
+#hero {
+    background: linear-gradient(175deg, rgba(0, 140, 190, 0.9) 0%, rgba(24, 151, 196, 0) 14%, rgba(255, 255, 255, 0) 67%), url(./img/turtle-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text {
+    color: white;
+}
+
+hr {
+    border: 1px solid white;
+    width: 6rem !important;
+}
+
+.hero-input-item {
+    padding-bottom: 1em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero-title h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.hero-desc h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.hero-desc i {
+    margin-right: 1rem;
+}
+
+.hero-input {
+    background-color: white;
+    max-width: 90%;
+    border-radius: 4px;
+    position: relative;
+    top: 25rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+.hero-input-item button {
+    background-color: #23CF5F;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 1.5em;
+    min-width: 80%;
+    margin-top: 1rem;
+    margin-left: 5rem;
+
+}
+
+.hero-input-item button:hover {
+    background-color: #1eb252;
+    border: 1px solid white;
+}
+
+
+.donate-desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+    color: #9AA8B6;
+}
+
+#hero-slide {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    padding-left: 8em;
+
+}
+
+.hero-text {
+    position: relative;
+    top: 15rem;
+}
+
+/* -------------- Content Section CSS ----------------*/
+.bottom {
+    margin-bottom: 8rem;
+}
+
+.section-container {
+    width: 70%;
+    margin: 10rem auto 0 auto;
+}
+
+.small-heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #3E4C5B;
+}
+
+.section-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.125rem;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #3E4C5B;
+    margin-bottom: 2rem;
+}
+
+.section-desc {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 34px;
+    color: #9AA8B6;
+}
+
+.section-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #23CF5F;
+    margin-right: 3rem;
+}
+
+.section-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------Highlight section CSS--------- */
+
+.number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #23CF5F;
+}
+
+.number-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: #3E4C5B;
+}
+
+.rect-container {
+    position: relative;
+}
+
+.highlight-rect {
+    width: 23rem;
+    height: 23rem;
+    border: 3px solid #23CF5F;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* -------------Latest News Section CSS------------ */
+.section-title1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.125rem;
+    color: #3E4C5B;
+}
+
+.section-desc1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #9AA8B6;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #23CF5F;
+}
+
+.line {
+    line-height: 1.5rem;
+}
+
+.latest-news img {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.btn-news {
+    width: 10rem;
+    background-color: #23CF5F;
+    color: #fff;
+    border: none;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1rem 0;
+}
+
+.p-left {
+    padding-left: 40px;
+}
+
+/* -------------Footer Section CSS ------------ */
+
+.footer {
+    margin: 10rem auto 5rem auto;
+    width: 100%;
+}
+
+.footer-item {
+    margin-top: 5rem;
+}
+
+.footer-item p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #3E4C5B;
+}
+
+.footer-item span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #23CF5F;
+}
+
+.subscribe {
+    margin: 4rem 0 10rem 0;
+}
+
+.subscription {
+    width: 50%;
+    margin: auto;
+}
+
+.email-footer-box {
+    width: 100%;
+    padding-left: 15px;
+    height: 4rem;
+    background: #F9FCFF;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-btn {
+    width: 100%;
+    height: 4rem;
+    background-color: #23CF5F;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.credits {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #9AA8B6;
+    padding: 0 10px;
+}
+
+.socials-footer i {
+    margin: 10px;
+}
+
+
+
+
+
+/* Slider */
+.slick-slide {
+    height: 100vh !important;
+}
+
+.slick-slider {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* -------------XS screen ------------ */
+
+@media (max-width: 576px) {
+
+    #hero {
+        background: linear-gradient(175deg, rgba(0, 140, 190, 0.9) 0%, rgba(24, 151, 196, 0) 14%, rgba(255, 255, 255, 0) 67%), url(./img/mobile-turtle-bg.jpg);
+    }
+
+    #hero-slide {
+        padding: 1em;
+    }
+
+    /* .hero-title h1 {
+        font-size: 30px;
+    } */
+
+    .hero-desc h3 {
+        font-size: 12px;
+    }
+
+    .hero-input {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1em;
+        top: 5rem;
+        margin: auto;
+    }
+
+    .hero-text {
+        top: 0;
+    }
+
+
+    .hero-input-item button {
+        margin-left: 0;
+    }
+
+    .donate-desc {
+        border-left: none;
+    }
+
+    .subscription {
+        width: 100%;
+        margin: auto;
+    }
+
+    .rect-container {
+        top: 25rem;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .highlight-rect {
+        width: 17rem;
+        height: 17rem;
+        
+    }
+
+    .socials-footer i {
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* -------------Small Screen---------------- */
+
+@media (max-width: 767px) {
+    #hero {
+        background: linear-gradient(175deg, rgba(0, 140, 190, 0.9) 0%, rgba(24, 151, 196, 0) 14%, rgba(255, 255, 255, 0) 67%), url(./img/mobile-turtle-bg.jpg);
+    }
+
+    #hero-slide {
+        padding: 1em;
+    }
+
+    /* .hero-title h1 {
+        font-size: 30px;
+    } */
+
+    .hero-desc h3 {
+        font-size: 12px;
+    }
+
+    .hero-input {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1em;
+        top: 10rem;
+        margin: auto;
+    }
+
+    .hero-text {
+        top: 5rem;
+    }
+
+    .hero-input-item button {
+        margin-left: 0;
+    }
+
+    .donate-desc {
+        border-left: none;
+    }
+
+    .subscription {
+        width: 100%;
+        margin: auto;
+    }
+
+    .rect-container {
+        top: 25rem;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .socials-footer i {
+        margin: 0;
+    }
+
+}
+
+/* ----------------Medium Screen----------------- */
+
+@media (max-width: 991px) {
+    #hero {
+        background: linear-gradient(175deg, rgba(0, 140, 190, 0.9) 0%, rgba(24, 151, 196, 0) 14%, rgba(255, 255, 255, 0) 67%), url(./img/mobile-turtle-bg.jpg);
+    }
+
+    #hero-slide {
+        padding: 1em;
+    }
+
+    /* .hero-title h1 {
+        font-size: 40px;
+    } */
+
+    .hero-desc h3 {
+        font-size: 12px;
+    }
+
+    .hero-input {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1em;
+        top: 10rem;
+        margin: auto;
+    }
+
+    .hero-text {
+        top: 5rem;
+    }
+
+    .hero-input-item button {
+        margin-left: 0;
+    }
+
+    .donate-desc {
+        border-left: none;
+    }
+
+    .subscription {
+        width: 100%;
+        margin: auto;
+    }
+
+    .rect-container {
+        top: 25rem;
+    }
+
+    .prog-slider {
+        margin-top: 27rem;
+    }
+
+    .socials-footer i {
+        margin: 0;
+    }
+
+}
