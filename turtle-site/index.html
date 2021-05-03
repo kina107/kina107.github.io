@@ -40,7 +40,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-items">
+                        <ul class="navbar-nav nav-items">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
                             </li>
@@ -94,16 +94,24 @@
                 </div>
                 <!-- Donate part -->
                 <div class="row hero-input">
-                    <div class="hero-input-item col-lg-4 col-md-12 col-12">
-                        <p>Donate to save baby turtles</p>
+                    <div class="hero-input-item col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center pt-3">
+                        <div class="hero-input-text">Donate to save baby turtles</div>
                     </div>
-                    <div class="hero-input-item col-lg-2 col-md-4 col-12">
-                        <p class="donate-desc">AMOUNT <i class="fas fa-sort-up"></i></p>
-                        <p>20$</p>
+                    <div class="custom-select col-lg-2 col-md-4 col-12">
+                        <select>
+                            <option value="0">Amount</option>
+                            <option value="1">$20</option>
+                            <option value="2">$25</option>
+                            <option value="3">$30</option>
+                        </select>                       
                     </div>
-                    <div class="hero-input-item col-lg-2 col-md-4 col-12">
-                        <p class="donate-desc">PERIOD <i class="fas fa-sort-up"></i></p>
-                        <p>Monthly</p>
+                    <div class="custom-select col-lg-2 col-md-4 col-12">
+                        <select>
+                            <option value="0">Period</option>
+                            <option value="1">Single</option>
+                            <option value="2">Monthly</option>
+                            <option value="3">Quarterly</option>
+                        </select>
                     </div>
                     <div class="hero-input-item col-lg-4 col-md-4 col-12">
                         <button type="button">DONATE</button>
