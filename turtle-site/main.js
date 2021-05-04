@@ -1,3 +1,4 @@
+// Slick Sliders
 $(document).ready(function () {
   $('#hero-slide').slick({
     slidesToScroll: 1,
@@ -15,6 +16,8 @@ $(document).ready(function () {
   });
 });
 
+
+// Donate Custom Select
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
