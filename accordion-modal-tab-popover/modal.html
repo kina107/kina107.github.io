@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- GG fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+     <!-- Link Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bg-color: #DECDAC;
+        --bg-modal-color: #FEFAF3;
+        --text-color: #504726;
+        --btn-color: #EBBF53;
+        --input-text-color: #BA9C69;
+        --btn-hover: #f0d081;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    h1,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding-top: 7rem;
+    }
+
+    .heading {
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 2rem;
+    }
+
+    .heading p {
+        font-size: 15px;
+    }
+
+    .btn__launch {
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    #launch--modal {
+        border: none;
+        background-color: var(--btn-color);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 40px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #launch--modal:hover {
+        background-color: var(--btn-hover);
+    }
+
+    #modal--background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .50;
+        filter: alpha(opacity=50);
+        z-index: 1;
+    }
+
+    #modal__content {
+        background-color: var(--bg-modal-color);
+        width: 45%;
+        margin: auto;
+        padding: 2rem 0;
+        border-radius: 40px;
+        position: relative;
+        z-index: 1000;
+        display: none;
+    }
+
+    .modal__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal__img img {
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        margin-right: 4rem;
+        position: relative;
+        transform: translateY(-4.1rem);
+    }
+
+    #close--modal {
+        border: none;
+        background-color: var(--bg-modal-color);
+        font-size: 25px;
+        color: var(--input-text-color);
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+
+    .modal__text {
+        padding-bottom: 5rem;
+        line-height: 1.5;
+    }
+
+    .input__area {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        border-radius: 30px;
+        border: 1px solid var(--text-color);
+        overflow: hidden;
+    }
+
+    .input--style {
+        width: 70%;
+        padding: 1rem 0 1rem 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+    }
+
+    .input--style:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: var(--input-text-color);
+        opacity: 0.8;
+    }
+
+    .btn--style {
+        width: 30%;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        background-color: var(--btn-color);
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn--style:hover {
+        background-color: var(--btn-hover);
+    }
+
+    #modal--background.active,
+    #modal__content.active {
+        display: block;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="heading">
+        <h1>This is an awesome website</h1>
+        <p>Coded with &#10084;&#65039;</p>
+    </div>
+    <div class="btn__launch">
+        <button id="launch--modal">Click to launch this beautiful modal</button>
+    </div>
+    <div id="modal--background"></div>
+    <div id="modal__content">
+        <div class="modal__heading">
+            <div class="modal__img">
+                <img src="./images/cactus-modal_edited1.jpg" alt="cactus-img">
+            </div>
+            <div class="modal__text">
+                <button id="close--modal">X</button>
+                <h1>Don't miss out.</h1>
+                <p>Sign up for our newsletter to stay in the loop</p>
+            </div>
+        </div>
+        <div class="input__area">
+            <input class="input--style" type="text" placeholder="Email address">
+            <button class="btn--style" type="button">Subscribe</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by Cindy Wang @ dribbble.com</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#launch--modal, #modal--background, #close--modal").click(function () {
+                $("#modal__content,#modal--background").toggleClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

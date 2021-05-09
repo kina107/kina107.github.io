@@ -476,7 +476,7 @@ a:active {
     }
 
     #hero {
-        background-image: url(./img/mobile-turtle-bg.jpg);
+        background: url(./img/mobile-turtle-bg.jpg) center top;
         background-size: cover;
     }
 
