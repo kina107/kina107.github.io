@@ -44,7 +44,7 @@ console.log (Math.floor (vndToEur (250000)));
 //Tinh the ky cua 1 nam
 
 function theKy (nam) {
-    return (nam / 100) + 1;
+    return ((nam -1) / 100) + 1;
 }
 let T = Math.floor(theKy (2021));
 console.log(T);
